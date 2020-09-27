@@ -1,0 +1,17 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "env-cmd -f ./config.env node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
