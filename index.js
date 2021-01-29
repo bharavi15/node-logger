@@ -21,7 +21,7 @@ const myCustomLevels = {
 winston.addColors(myCustomLevels.colors);
 
 const customLevelLogger = winston.createLogger({
-  level: process.env.logLevel || 'silly',
+  level: process.env.logLevel || 'info',
   format: winston.format.combine( 
   winston.format.colorize({all:true}),
   winston.format.simple()
