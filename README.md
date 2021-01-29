@@ -10,7 +10,11 @@ Use the npm to install node-logger.
 npm install git+https://github.com/bharavi15/node-logger.git
 ```
 
+## Configuration
+
+`node-logger` uses `logLevel` environment variable to set the desired log level for the logger
 ## Usage
+
 
 ```js
 const logger = require('node-logger');
