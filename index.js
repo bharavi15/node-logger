@@ -21,7 +21,7 @@ const myCustomLevels = {
 winston.addColors(myCustomLevels.colors);
 
 const customLevelLogger = winston.createLogger({
-  level: process.env.logLevel || 'error',
+  level: process.env.logLevel || 'silly',
   format: winston.format.combine( 
   winston.format.colorize({all:true}),
   winston.format.simple()
@@ -32,7 +32,7 @@ const customLevelLogger = winston.createLogger({
   ]
 });
 module.exports = customLevelLogger
-/* customLevelLogger.error('some error level-ed message');
-customLevelLogger.info('some info level-ed message');
-customLevelLogger.debug('some debug level-ed message');
-customLevelLogger.silly('some silly level-ed message'); */
+/* customLevelLogger.error('some error message');
+customLevelLogger.info('some info message');
+customLevelLogger.debug('some debug message');
+customLevelLogger.silly('some silly message'); */
